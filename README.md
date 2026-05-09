@@ -27,3 +27,4 @@ brew install <token>
 
 |代称|主页|
 |-|-|
+|`mxiris-lyricsx`|[Mxiris LyricsX](https://github.com/MxIris-LyricsX-Project/LyricsX)|
