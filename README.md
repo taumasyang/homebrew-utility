@@ -22,6 +22,7 @@ brew install <token>
 
 |代称|主页|
 |-|-|
+|`gitstatus`|[Git Status](https://github.com/romkatv/gitstatus)|
 
 ### 木桶 Cask
 
