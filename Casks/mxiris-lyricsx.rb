@@ -1,6 +1,6 @@
 cask "mxiris-lyricsx" do
-  version "1.8.2,2910"
-  sha256 "2c9c7da2959337e0b2cec65c56b5278e426f3a32d8dafe672b2b8fa4ef8ed8fb"
+  version "1.8.5,2920"
+  sha256 "cb61a1d29123a17542f4063595cecb065cf307258daa6cfbcd4ac5e6884fa727"
 
   url "https://github.com/MxIris-LyricsX-Project/LyricsX/releases/download/v#{version.csv.first}/LyricsX_#{version.csv.first}+#{version.csv.second}.zip"
   name "LyricsX"
@@ -14,7 +14,7 @@ cask "mxiris-lyricsx" do
 
   auto_updates true
   conflicts_with cask: "lyricsx"
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :catalina
 
   app "LyricsX.app"
 
