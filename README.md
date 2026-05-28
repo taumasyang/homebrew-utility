@@ -29,3 +29,9 @@ brew install <token>
 |代称|主页|
 |-|-|
 |`mxiris-lyricsx`|[Mxiris LyricsX](https://github.com/MxIris-LyricsX-Project/LyricsX)|
+|`yaagl`|[Yaagl](https://github.com/yaagl/yet-another-anime-game-launcher/)|
+|`yaagl-os`|[Yaagl OS](https://github.com/yaagl/yet-another-anime-game-launcher/)|
+|`yaagl-hsr`|[Yaagl HSR](https://github.com/yaagl/yet-another-anime-game-launcher/)|
+|`yaagl-hsr-os`|[Yaagl HSR OS](https://github.com/yaagl/yet-another-anime-game-launcher/)|
+|`yaagl-zzz`|[Yaagl ZZZ](https://github.com/yaagl/yet-another-anime-game-launcher/)|
+|`yaagl-zzz-os`|[Yaagl ZZZ OS](https://github.com/yaagl/yet-another-anime-game-launcher/)|
