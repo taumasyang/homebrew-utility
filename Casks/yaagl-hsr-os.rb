@@ -1,6 +1,6 @@
 cask "yaagl-hsr-os" do
-  version "0.3.15"
-  sha256 "35e220393e5fb8c9705d46fac2d9641152ef1039f37f1774d3ea55a27f87fa6d"
+  version "0.3.16"
+  sha256 "d5bbc7a975a7680baf6ed9dc96cc1258fec18c0ba804127ffd795aa9e4a0d3e9"
 
   on_arm do
     depends_on macos: :sequoia

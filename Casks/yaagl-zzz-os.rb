@@ -1,6 +1,6 @@
 cask "yaagl-zzz-os" do
-  version "0.3.15"
-  sha256 "bd2b160bc5dde8f276f1600ef67779141381a97bc82ae51a765864d051d8de5f"
+  version "0.3.16"
+  sha256 "939e91efe011491c2f4a52e66af0da26803c32fce0b7ac640c06058da1efc69a"
 
   on_arm do
     depends_on macos: :sequoia
