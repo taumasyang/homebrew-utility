@@ -1,6 +1,6 @@
 cask "mxiris-lyricsx" do
-  version "1.8.8,2933"
-  sha256 "cb7c21f25e592530b0cc7120e0d649c901c0c9e5f7d1ee79d41a1e21ad8ccf21"
+  version "1.8.9,10809999"
+  sha256 "dabc2a1b1c9216c186d6b58c8594e18b971e94f3c6f82eb09083750cde5755c8"
 
   url "https://github.com/MxIris-LyricsX-Project/LyricsX/releases/download/v#{version.csv.first}/LyricsX_#{version.csv.first}+#{version.csv.second}.zip"
   name "LyricsX"
@@ -9,7 +9,9 @@ cask "mxiris-lyricsx" do
 
   livecheck do
     url "https://mxiris-lyricsx-project.github.io/appcast.xml"
-    strategy :sparkle
+    strategy :sparkle do |items|
+      items.find { |item| item.channel.nil? }&.then { |item| "#{item.short_version},#{item.version}" }
+    end
   end
 
   auto_updates true
@@ -19,11 +21,11 @@ cask "mxiris-lyricsx" do
   app "LyricsX.app"
 
   zap trash: [
-    "~/Library/Application Scripts/com.JH.LyricsX",
-    "~/Library/Application Scripts/com.JH.LyricsXHelper",
-    "~/Library/Application Scripts/D5Q73692VW.group.com.JH.LyricsX",
-    "~/Library/Containers/com.JH.LyricsX",
-    "~/Library/Containers/com.JH.LyricsXHelper",
-    "~/Library/Group Containers/D5Q73692VW.group.com.JH.LyricsX",
+    "~/Library/Application Support/CrashReporter/LyricsXHelper_*.plist",
+    "~/Library/Caches/com.JH.LyricsX",
+    "~/Library/HTTPStorages/com.JH.LyricsX*",
+    "~/Library/Preferences/com.JH.LyricsX.plist",
+    "~/Library/Preferences/com.JH.LyricsX.shared.plist",
+    "~/Music/LyricsX",
   ]
 end
