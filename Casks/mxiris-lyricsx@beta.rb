@@ -1,6 +1,6 @@
-cask "mxiris-lyricsx" do
-  version "1.8.9,10809999"
-  sha256 "dabc2a1b1c9216c186d6b58c8594e18b971e94f3c6f82eb09083750cde5755c8"
+cask "mxiris-lyricsx@beta" do
+  version "1.9.0-beta.10,10900110"
+  sha256 "47d18c7fd2c587436b52d27eb2550ba7aba535c00c370898c4b61dcb199a8437"
 
   url "https://github.com/MxIris-LyricsX-Project/LyricsX/releases/download/v#{version.csv.first}/LyricsX_#{version.csv.first}+#{version.csv.second}.zip"
   name "LyricsX"
@@ -10,16 +10,16 @@ cask "mxiris-lyricsx" do
   livecheck do
     url "https://mxiris-lyricsx-project.github.io/appcast.xml"
     strategy :sparkle do |items|
-      items.find { |item| item.channel.nil? }&.then { |item| "#{item.short_version},#{item.version}" }
+      items.find { |item| item.channel == "beta" }&.then { |item| "#{item.short_version},#{item.version}" }
     end
   end
 
   auto_updates true
   conflicts_with cask: [
     "lyricsx",
-    "mxiris-lyricsx@beta",
+    "mxiris-lyricsx",
   ]
-  depends_on macos: :catalina
+  depends_on macos: :monterey
 
   app "LyricsX.app"
 

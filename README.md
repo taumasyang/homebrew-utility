@@ -30,6 +30,7 @@ brew install <token>
 |-|-|
 |`animeko`|[Animeko](https://animeko.org/)|
 |`mxiris-lyricsx`|[Mxiris LyricsX](https://github.com/MxIris-LyricsX-Project/LyricsX)|
+|`mxiris-lyricsx@beta`|[Mxiris LyricsX](https://github.com/MxIris-LyricsX-Project/LyricsX)|
 |`yaagl`|[Yaagl](https://github.com/yaagl/yet-another-anime-game-launcher/)|
 |`yaagl-os`|[Yaagl OS](https://github.com/yaagl/yet-another-anime-game-launcher/)|
 |`yaagl-hsr`|[Yaagl HSR](https://github.com/yaagl/yet-another-anime-game-launcher/)|
