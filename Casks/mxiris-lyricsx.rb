@@ -15,7 +15,10 @@ cask "mxiris-lyricsx" do
   end
 
   auto_updates true
-  conflicts_with cask: "lyricsx"
+  conflicts_with cask: [
+    "lyricsx",
+    "mxiris-lyricsx@beta",
+  ]
   depends_on macos: :catalina
 
   app "LyricsX.app"
