@@ -29,6 +29,7 @@ brew install <token>
 |代称|主页|
 |-|-|
 |`animeko`|[Animeko](https://animeko.org/)|
+|`animeko@alpha`|[Animeko](https://animeko.org/)|
 |`mxiris-lyricsx`|[Mxiris LyricsX](https://github.com/MxIris-LyricsX-Project/LyricsX)|
 |`mxiris-lyricsx@beta`|[Mxiris LyricsX](https://github.com/MxIris-LyricsX-Project/LyricsX)|
 |`yaagl`|[Yaagl](https://github.com/yaagl/yet-another-anime-game-launcher/)|
