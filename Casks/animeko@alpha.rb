@@ -1,10 +1,10 @@
-cask "animeko" do
+cask "animeko@alpha" do
   arch arm: "aarch64", intel: "x86_64"
   extension = on_arch_conditional arm: "dmg", intel: "zip"
 
-  version "5.7.1"
-  sha256 arm:   "3225bfed03c9e2d4912d3e8ba0fb408fe85f2f843c6b5f46c636c44b13649b3a",
-         intel: "bf3a8e8340a9d84bd2d81cac9ec0d3e0b6926663933707abf651be0f2feefa10"
+  version "6.0.0-beta01"
+  sha256 arm:   "d42ae234d9e14b6617b37f3c493a4b15248367ba7374bad68d271515e1010b9f",
+         intel: "9d1b08ca5c527436e050eda2e53169bcd03ecc6bcaf0aebf6cfa43af918a1e4e"
 
   url "https://d2.myani.org/v#{version}/ani-#{version}-macos-#{arch}.#{extension}",
       verified: "d2.myani.org"
@@ -13,14 +13,14 @@ cask "animeko" do
   homepage "https://animeko.org/"
 
   livecheck do
-    url "https://danmaku-cn.myani.org/v1/updates/latest?releaseClass=stable"
+    url "https://danmaku-cn.myani.org/v1/updates/latest?releaseClass=alpha"
     strategy :json do |json|
       json["version"]
     end
   end
 
   auto_updates true
-  conflicts_with cask: "animeko@alpha"
+  conflicts_with cask: "animeko"
   depends_on :macos
 
   app "Ani.app"
