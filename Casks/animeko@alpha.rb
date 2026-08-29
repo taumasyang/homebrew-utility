@@ -2,9 +2,9 @@ cask "animeko@alpha" do
   arch arm: "aarch64", intel: "x86_64"
   extension = on_arch_conditional arm: "dmg", intel: "zip"
 
-  version "6.1.0-beta01"
-  sha256 arm:   "3722b161926dc6d922c7b3a9f4f7d66c10904b8e8955365c2497056599b240c6",
-         intel: "a1af893932231bfee1e46148315fc12794a58f45be24e86b38f3ed10d182be94"
+  version "6.1.0"
+  sha256 arm:   "f25de8d929118f91ee7c480a7254f4f3955f347134aced08a14d0cf2d6f29f0c",
+         intel: "9cc2f9abd11b402757045cfbb27f3c27cc48bdd32fc16784fab429d50dd8f98b"
 
   url "https://d2.myani.org/v#{version}/ani-#{version}-macos-#{arch}.#{extension}",
       verified: "d2.myani.org"
