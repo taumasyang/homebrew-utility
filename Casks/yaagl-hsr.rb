@@ -5,9 +5,6 @@ cask "yaagl-hsr" do
   on_arm do
     depends_on macos: :sequoia
   end
-  on_intel do
-    depends_on macos: :catalina
-  end
 
   url "https://github.com/yaagl/yet-another-anime-game-launcher/releases/download/#{version}/Yaagl.HSR.app.tar.gz"
   name "Yaagl HSR"
@@ -15,6 +12,7 @@ cask "yaagl-hsr" do
   homepage "https://github.com/yaagl/yet-another-anime-game-launcher/"
 
   auto_updates true
+  depends_on :macos
 
   app "Yaagl HSR.app"
 
