@@ -19,7 +19,7 @@ cask "mxiris-lyricsx" do
     "lyricsx",
     "mxiris-lyricsx@beta",
   ]
-  depends_on macos: :catalina
+  depends_on :macos
 
   app "LyricsX.app"
 

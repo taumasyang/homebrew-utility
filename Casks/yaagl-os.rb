@@ -5,9 +5,6 @@ cask "yaagl-os" do
   on_arm do
     depends_on macos: :sequoia
   end
-  on_intel do
-    depends_on macos: :catalina
-  end
 
   url "https://github.com/yaagl/yet-another-anime-game-launcher/releases/download/#{version}/Yaagl.OS.app.tar.gz"
   name "Yaagl OS"
@@ -19,6 +16,7 @@ cask "yaagl-os" do
   end
 
   auto_updates true
+  depends_on :macos
 
   app "Yaagl OS.app"
 
