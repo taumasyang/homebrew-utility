@@ -1,6 +1,6 @@
 cask "mxiris-lyricsx@beta" do
-  version "1.9.0-beta.11,10900111"
-  sha256 "9eae617155064dbadd820bdd1d8ea346817216f6dd3eb78ffc5fd4ba49b1f907"
+  version "1.9.0-beta.12,10900112"
+  sha256 "5be697e212b8ddb6c521846173845514250e11ed385c0ee14ea7f07790c426d1"
 
   url "https://github.com/MxIris-LyricsX-Project/LyricsX/releases/download/v#{version.csv.first}/LyricsX_#{version.csv.first}+#{version.csv.second}.zip"
   name "LyricsX"
