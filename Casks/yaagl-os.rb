@@ -1,6 +1,6 @@
 cask "yaagl-os" do
-  version "0.3.21"
-  sha256 "8a3fcedc5eac8d4917c51d6f8c2ab54f90112dcdbb6ad401ee93567ae8a6ad01"
+  version "0.4.0"
+  sha256 "1c7a9c41e0b7d26eb0c776cd9f70ee41920a5bb05749fd24d84224a71a00b89b"
 
   on_arm do
     depends_on macos: :sequoia
@@ -12,7 +12,7 @@ cask "yaagl-os" do
   homepage "https://github.com/yaagl/yet-another-anime-game-launcher/"
 
   auto_updates true
-  depends_on :macos
+  depends_on macos: :ventura
 
   app "Yaagl OS.app"
 
